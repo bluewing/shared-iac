@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  shared-iac:
+    image: hashicorp/terraform:1.2.2
+    container_name: shared-iac
+    volumes:
+      - .:/var/www
+    working_dir: /var/www
